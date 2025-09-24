@@ -17,6 +17,62 @@ Using pandas and matplotlib i analysed and visualised the data to unrstand the d
 3,GP,F,15,U,GT3,T,4,2,health,services,home,mother,1,3,0,no,yes,yes,yes,yes
 4,GP,F,16,U,GT3,T,3,3,other,other,home,father,1,2,0,no,yes,yes,no,yes
 
+After googling and searching for the meaning of the columns 
+| Column    | Meaning                                                           | Type        |
+| --------- | ----------------------------------------------------------------- | ----------- |
+| `school`  | Student’s school: GP = Gabriel Pereira, MS = Mousinho da Silveira | Categorical |
+| `sex`     | Student’s sex: F = female, M = male                               | Categorical |
+| `age`     | Student’s age in years (15–22)                                    | Numeric     |
+| `address` | Home address: U = Urban, R = Rural                                | Categorical |
+| `famsize` | Family size: LE3 = ≤3, GT3 = >3                                   | Categorical |
+| `Pstatus` | Parent cohabitation status: T = living together, A = apart        | Categorical |
+
+| Column | Meaning                                                                                            | Type        |
+| ------ | -------------------------------------------------------------------------------------------------- | ----------- |
+| `Medu` | Mother’s education (0 = none, 1 = primary, 2 = 5th–9th grade, 3 = secondary, 4 = higher education) | Numeric     |
+| `Fedu` | Father’s education (same scale as Medu)                                                            | Numeric     |
+| `Mjob` | Mother’s job: teacher / health / services / at\_home / other                                       | Categorical |
+| `Fjob` | Father’s job: teacher / health / services / at\_home / other                                       | Categorical |
+
+| Column     | Meaning                                                             | Type        |
+| ---------- | ------------------------------------------------------------------- | ----------- |
+| `reason`   | Reason for choosing this school: home / reputation / course / other | Categorical |
+| `guardian` | Primary guardian: mother / father / other                           | Categorical |
+
+| Column       | Meaning                                                                            | Type    |
+| ------------ | ---------------------------------------------------------------------------------- | ------- |
+| `traveltime` | Home to school travel time: 1 (<15 min), 2 (15–30 min), 3 (30–60 min), 4 (>60 min) | Numeric |
+| `studytime`  | Weekly study time: 1 (<2h), 2 (2–5h), 3 (5–10h), 4 (>10h)                          | Numeric |
+| `failures`   | Number of past class failures (0–3)                                                | Numeric |
+
+| Column       | Meaning                                        | Type        |
+| ------------ | ---------------------------------------------- | ----------- |
+| `schoolsup`  | Extra educational support: yes / no            | Categorical |
+| `famsup`     | Family educational support: yes / no           | Categorical |
+| `paid`       | Extra paid classes within the course: yes / no | Categorical |
+| `activities` | Extra-curricular activities: yes / no          | Categorical |
+| `nursery`    | Attended nursery school: yes / no              | Categorical |
+| `higher`     | Wants to take higher education: yes / no       | Categorical |
+| `internet`   | Internet access at home: yes / no              | Categorical |
+| `romantic`   | Student in a romantic relationship: yes / no   | Categorical |
+
+| Column     | Meaning                                                       | Type    |
+| ---------- | ------------------------------------------------------------- | ------- |
+| `famrel`   | Quality of family relationships (1 = very bad, 5 = excellent) | Numeric |
+| `freetime` | Free time after school (1 = very little, 5 = very much)       | Numeric |
+| `goout`    | Going out with friends (1 = very little, 5 = very often)      | Numeric |
+| `Dalc`     | Workday alcohol consumption (1 = very low, 5 = very high)     | Numeric |
+| `Walc`     | Weekend alcohol consumption (1 = very low, 5 = very high)     | Numeric |
+| `health`   | Current health status (1 = very bad, 5 = very good)           | Numeric |
+| `absences` | Number of school absences (0–93)                              | Numeric |
+
+| Column | Meaning                    | Type    |
+| ------ | -------------------------- | ------- |
+| `G1`   | First period grade (0–20)  | Numeric |
+| `G2`   | Second period grade (0–20) | Numeric |
+| `G3`   | Final grade (0–20)         | Numeric |
+
+
 ### 2. checking for any missing values
    missing count
 school        0
