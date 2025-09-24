@@ -239,6 +239,7 @@ Convergence: Training stops when loss stabilizes or max iterations (max_iter=100
 
 ### Accuracy = 0.8860759493670886
 <img width="325" height="49" alt="image" src="https://github.com/user-attachments/assets/16fa830a-44a7-4b59-ab63-d2845483e140" />
+
 ### Confusion matrix 
 = [[24  2]
  [ 7 46]]
