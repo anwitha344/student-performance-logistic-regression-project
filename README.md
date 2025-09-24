@@ -165,7 +165,34 @@ romantic
 no     263
 yes    132
 Name: count, dtype: int64
+<img width="1224" height="918" alt="image" src="https://github.com/user-attachments/assets/6162a294-88fd-44ad-a902-57cdcd9d1084" />
+<img width="983" height="750" alt="image" src="https://github.com/user-attachments/assets/0a03a5e9-d309-488b-8ff5-c8cef1e603c5" />
 
-###
+## Training the model 
+
+Architecture: single layer, sigmoid activation function to output probability bw 0-1
+all numerical input features are scaled using standardscaler and categorical features one-hot encoded using OneHotEncoder
+
+Loss function is binary cross entropy loss
+
+optimizer is scikit learn default lbfgs
+
+Convergence: Training stops when loss stabilizes or max iterations (max_iter=1000) is reached.
+
+## Accuracy 
+
+### Accuracy = 0.8860759493670886
+<img width="325" height="49" alt="image" src="https://github.com/user-attachments/assets/16fa830a-44a7-4b59-ab63-d2845483e140" />
+### Confusion matrix 
+= [[24  2]
+ [ 7 46]]
+<img width="654" height="556" alt="image" src="https://github.com/user-attachments/assets/a8656df8-90db-4784-9d11-5466bde9a8af" />
+
+### Classification report 
+<img width="520" height="185" alt="image" src="https://github.com/user-attachments/assets/90b6c800-66e6-4364-8afd-5096b8369764" />
+
+### ROC curve 
+<img width="701" height="556" alt="image" src="https://github.com/user-attachments/assets/67c206a7-d6e7-4ea4-8c82-208aba3a4ef9" />
+
 
 
